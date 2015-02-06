@@ -1,4 +1,104 @@
 
+
+
+public class Demo
+{
+
+
+
+	 /**
+     * 
+     * @param minmax              :求函数的最大值或最小值（1表示取最大值，-1表示取最小值）
+     * @param restrictionNum      :约束条件的个数
+     * @param variableNum         :变量个数
+     * @param restrictionNumLess  :<=的约束条件个数
+     * @param restrictionNumEqual :=的约束条件个数
+     * @param restrictionNumMore  :>=的约束条件个数
+     * @param a                   :约束条件的系数矩阵(按照条件<=,=,>=排列)
+     * @param x                   :目标函数的价值系数
+     */
+    public Demo(double minmax, int restrictionNum, int variableNum,
+            int restrictionNumLess, int restrictionNumEqual, int restrictionNumMore,
+            double a[][], int x[])
+    {
+
+
+
+
+    }
+    
+    /**
+     * 
+     * 计算线性规划结果
+     * @return  double[]长度为2，double[0]取值为0，1，2，3
+     *          0表示有最优解（一个和多个均可）
+     *          1表示参数错误（也就是条件个数之和与条件数组长度不符合）
+     *          2表示无界解（也就是最优解为正无穷或负无穷）
+     *          3表示无可行解（也就是条件冲突，任何一组数字都不可能满足所有条件）
+     *          
+     *          double[1]为最优化值，仅在double[0] == 0时有意义
+     *          
+     */
+    public double[] solve()
+    {
+        double[] result = new double[2];
+
+        return result;
+    }
+    
+    
+}
+
+
+
+
+
+import huawei.Demo;
+
+import junit.framework.TestCase;
+
+public class DemoTest extends TestCase
+{
+    public void testCase00()
+    {
+        
+        double a[][] = {{1,-2,1,11},{-2,0,1,1},{-4,1,2,3}};
+        int x[] = {-3,1,1};
+        
+        Demo demo = new Demo(-1,3,3,1,1,1,a,x);
+        double[] result = demo.solve();
+        
+        assertTrue((-0.01 < (0- result[0]) ) && ((0 - result[0]) < 0.01));
+        
+        assertTrue((-0.01 < (-2.0 - result[1]) ) && ((-2.0 - result[1]) < 0.01));
+        
+    }
+    
+    public void testCase01()
+    {
+        
+        double a[][] = {{5,10,50},{0,1,4},{1,1,1}};
+        int x[] = {1,3};
+        Demo demo = new Demo(1,3,2,2,0,1,a,x);
+        double[] result = demo.solve();
+        
+        assertTrue((-0.01 < (0- result[0]) ) && ((0 - result[0]) < 0.01));
+        
+        assertTrue((-0.01 < (14 - result[1]) ) && ((14 - result[1]) < 0.01));
+        
+    }
+    
+  
+    
+}
+
+
+
+
+
+
+
+
 noip  内还有关联一个百度文库讲解
 http://quartergeek.com/noip2005-senior-solution/
 
