@@ -1,4 +1,29 @@
 
+
+推荐：(IBM mahout文档)
+http://www.zhihu.com/question/20558659
+
+协同过滤:
+http://www.zhihu.com/question/22404652
+
+Pearson：
+http://blog.csdn.net/database_zbye/article/details/8664516
+pearson correlation 缺点 (G)
+
+
+小教官
+http://blog.tomtung.com/2007/10/noip05-fire/
+
+菱形距离
+http://blog.csdn.net/nys001/article/details/12637201
+
+
+
+
+性能调优工具 Flame Graph：
+http://structureddata.org/2012/06/18/linux-6-transparent-huge-pages-and-hadoop-workloads/
+
+
 大话数据挖掘
 http://blog.sina.com.cn/s/blog_6255c70101019ks3.html
 
