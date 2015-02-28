@@ -1,4 +1,5 @@
-
+http://shiyanjun.cn/archives/744.html
+http://www.52ml.net/15084.html
 
 推荐：(IBM mahout文档)
 http://www.zhihu.com/question/20558659
