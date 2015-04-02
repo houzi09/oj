@@ -1,4 +1,3 @@
-package huawei;
 
 public class ResultBean 
 {
