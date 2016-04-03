@@ -93,6 +93,13 @@ public class Demo
         }
     }
 
+// LinkPoint set pre position, so can :
+// LinkPoint it = this.p.pre;
+//        while (it!=null) {
+//            stack.add((Point)it);
+//            it = it.pre;
+//       }
+// int dealOneNode(Queue<LinkPoint> queue, LinkPoint e)
     private int dealOneNode(Queue<Position> queue, Position e) {
       for (Position c : getNextPostions(e)) {
       	switch (c.mark) {
@@ -136,6 +143,7 @@ public class Demo
         {
         case '.':
         case 'P':
+        	// lst.add(new LinkPoint(i,j,e));
 		Position p = new Position(i, j, v);
 		System.out.println(i+" "+j+":"+e.steps);
 		p.steps = 1+e.steps;
